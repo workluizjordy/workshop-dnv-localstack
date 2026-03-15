@@ -17,8 +17,8 @@ variable "assume_role" {
   default = {
     arn        = "arn:aws:iam::000000000000:root"
     region     = "us-east-1"
-    access_key = "test" # Credenciais dummy para LocalStack
-    secret_key = "test" # Credenciais dummy para LocalStack
+    access_key = "test"
+    secret_key = "test"
   }
 }
 

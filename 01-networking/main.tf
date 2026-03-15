@@ -7,9 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "workshop-dnv"
-    key    = "networking/terraform.tfstate"
-    region = "us-east-1"
+    bucket       = "workshop-dnv"
+    key          = "networking/terraform.tfstate"
+    region       = "us-east-1"
+    use_lockfile = true
 
     # Sintaxe correta para Provider v6+
     endpoints = {
